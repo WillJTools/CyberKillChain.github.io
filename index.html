@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cyber Kill Chain</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding the Cyber Kill Chain</h1>
+        
+        <div class="kill-chain-section">
+            <h2>1. Reconnaissance</h2>
+            <p>Example: An attacker uses public sources like social media, company websites, and LinkedIn profiles to gather information about employees' roles and responsibilities. This information helps them craft convincing spear-phishing emails tailored to specific individuals.</p>
+            <p>Tools: theHarvester, Shodan, Recon-ng</p>
+        </div>
+        
+        <div class="kill-chain-section">
+            <h2>2. Weaponization</h2>
+            <p>Example: An attacker attaches a malicious macro to an innocuous-looking Word document. When the victim opens the document and enables macros, the malware is executed, allowing the attacker to gain access to the victim's system.</p>
+            <p>Tools: Metasploit, Cobalt Strike, Social Engineer Toolkit (SET)</p>
+        </div>
+
+        <!-- Repeat the same structure for the other stages with examples and tools -->
+
+        <div class="kill-chain-section">
+            <h2>3. Delivery</h2>
+            <p>Example: An attacker sends a phishing email to an employee, pretending to be from a legitimate source like the HR department. The email contains a link that leads to a fake login page where the victim unwittingly enters their credentials.</p>
+            <p>Tools: GoPhish, SET, Maltego</p>
+        </div>
+
+        <div class="kill-chain-section">
+            <h2>4. Exploitation</h2>
+            <p>Example: An attacker identifies a known vulnerability in a web server software that the target company is using. They exploit this vulnerability using a crafted HTTP request to gain unauthorized access to the server.</p>
+            <p>Tools: Metasploit, Burp Suite, Nessus</p>
+        </div>
+
+        <div class="kill-chain-section">
+            <h2>5. Installation</h2>
+            <p>Example: Once inside the system, the attacker uploads a backdoor—a malicious software that allows remote access—into a seemingly harmless application that employees commonly use.</p>
+            <p>Tools: Netcat, Meterpreter, Empire</p>
+        </div>
+
+        <div class="kill-chain-section">
+            <h2>6. Command and Control (C2)</h2>
+            <p>Example: The attacker uses a compromised system to communicate with a remote server, disguising the communication as legitimate traffic to avoid detection by security measures.</p>
+            <p>Tools: Cobalt Strike, Metasploit, Covenant</p>
+        </div>
+
+        <div class="kill-chain-section">
+            <h2>7. Execution</h2>
+            <p>Example: The attacker uses the compromised system to harvest sensitive data, such as credit card information, usernames, and passwords, which are then exfiltrated to a remote server controlled by the attacker.</p>
+            <p>Tools: Mimikatz, BloodHound, CrackMapExec</p>
+        </div>
+
+        <div class="kill-chain-section">
+            <h2>8. Actions on Objectives</h2>
+            <p>Example: With the stolen data in hand, the attacker attempts to sell the information on underground forums, potentially leading to financial loss and reputation damage for the targeted organization.</p>
+            <p>Tools: Tor, Darknet forums, Cryptocurrencies for transactions</p>
+        </div>
+    </div>
+</body>
+</html>
